@@ -1,0 +1,14 @@
+show global variables like 'local_infile';
+
+set global local_infile=true;
+
+show global variables like 'local_infile';
+
+exit
+
+mysql --local-infile=1 -u root -p
+#Software724
+
+/* Example: 
+LOAD DATA LOCAL INFILE 'Contacts.csv' INTO TABLE contacts;
+*/
